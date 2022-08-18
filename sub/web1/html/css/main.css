@@ -1,0 +1,296 @@
+@charset "usf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400px;
+    color: #333;
+}
+img {
+    display: inline-block;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+.active{
+    background-color: #372f2dbb;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+}
+  
+.deactive{
+
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+}
+/* header JS end */
+
+/*.fixed_area.fixed {position: fixed; top: 5px; z-index:-10}*/
+
+
+
+header {
+    width: 100%;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+header .header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+}
+header h1 {
+    line-height: 90px;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    padding: 0 34px;
+    font-weight: 200;
+}
+header ul {
+    display: flex;
+    color: #fff;
+}
+header ul li {
+    padding: 0 10px;
+    font-weight: 200;
+}
+header ul li img {
+    width: 20px;
+}
+.main_visual {
+    height: 100vh;
+    position: relative;
+    background:url(../img/background01.png) center center / cover no-repeat;
+}
+.main_visual .background {
+    height: 936px;
+}
+.main_visual .background .main_text {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.main_visual .background .main_text h4 {
+    font-family: 'STIX Two Text';
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    position: relative;
+    /* animation: fadeInUp 1s; */
+}
+.main_visual .background .main_text p {
+    margin-top: 20px;
+    font-size: 28px;
+    position: relative;
+    /* animation: fadeInUp 1.2s; */
+}
+
+
+/*      cont01      */
+
+
+.cont01 {
+    width: 1440px;
+    margin: 200px auto;
+}
+.cont .text_box {
+    text-align: center;
+}
+.cont .text_box h4 {
+    font-size: 40px;
+    font-family: 'STIX Two Text';
+    font-weight: 200;
+}
+.cont .text_box p {
+    font-size: 25px;
+    margin: 30px 0 100px;
+}
+.cont01 .item_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont01 .item_list div a {
+    text-align: center;
+}
+.cont01 .item_list div a strong {
+    font-size: 20px;
+    color: #333;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.cont01 .item_list div a p {
+    font-size: 24px;
+    color: #333;
+    font-weight: 400;
+}
+.cont01 .item_list div a .box img {
+    object-fit: cover;
+    width: 100%;
+}
+.cont01 .item_list div a div:nth-of-type(2) {
+    margin: 20px 0 0;
+}
+
+/* 베스트상품hover 효과 */
+
+
+
+
+
+
+
+
+/*      cont02      */
+
+.cont02 {
+    width: 100%;
+    height: 1000px;
+    background: url(../img/movie_background.jpg) center center / cover no-repeat;
+    background-attachment:fixed;
+}
+.cont02 .youtube {
+    width: 1196px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 200px 0;
+}
+.cont02 .youtube .youtube_wrap {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.cont02 .youtube .youtube_wrap iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*      cont03      */
+
+.cont03 {
+    width: 1440px;
+    margin: 200px auto;
+}
+.cont03 .text_box h4 {
+    margin-bottom: 100px;
+}
+.cont03 .insta_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cont03 .insta_list p {
+    width: 288px;
+    height: 288px;
+    overflow: hidden;
+}
+.cont03 .insta_list p img {
+    transition: all 0.2s linear;
+}
+.cont03 .insta_list p:hover img {
+    transform: scale(1.1);
+}
+
+/*     footer     */
+
+footer {
+    padding: 35px 0 35px;
+    background-color: #372f2d;
+}
+footer .footer_line {
+    border-bottom: 1px solid #564946;
+}
+footer .footer_line ul {
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+footer .footer_line ul li {
+    padding: 0 28px 0 0;
+    
+}
+footer ul li a {
+    display: block;
+    font-size: 16px;
+}
+footer .footer_inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+footer .footer_inner ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer_inner ul li h5 {
+    color: #c1988e;
+    font-size: 18px;
+    margin: 25px 0;
+}
+footer .footer_inner ul li p {
+    color: #fff;
+    line-height: 30px;
+    font-weight: 200;
+    font-size: 13px;
+    margin-right: 58px;
+}
+footer .footer_inner ul li .li_inner {
+    display: flex;
+}
+footer .footer_inner ul li .li_inner p img {
+    display: block;
+    width: 24px;
+}
+footer .footer_inner ul li .li_inner .sns {
+    margin-right: 20px;
+}
+footer .copyright {
+    width: 1440px;
+    margin: 40px auto 0;
+    color: #8f8f8f;
+    font-size: 13px;
+}

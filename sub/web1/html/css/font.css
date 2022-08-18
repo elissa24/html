@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-Bold.eot');
+    src: url('font/STIXTwoText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-Bold.woff2') format('woff2'),
+        url('font/STIXTwoText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-MediumItalic.eot');
+    src: url('font/STIXTwoText-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-MediumItalic.woff2') format('woff2'),
+        url('font/STIXTwoText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-BoldItalic.eot');
+    src: url('font/STIXTwoText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-BoldItalic.woff2') format('woff2'),
+        url('font/STIXTwoText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-Medium.eot');
+    src: url('font/STIXTwoText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-Medium.woff2') format('woff2'),
+        url('font/STIXTwoText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Math';
+    src: url('font/STIXTwoMath-Regular.eot');
+    src: url('font/STIXTwoMath-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoMath-Regular.woff2') format('woff2'),
+        url('font/STIXTwoMath-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-Italic.eot');
+    src: url('font/STIXTwoText-Italic.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-Italic.woff2') format('woff2'),
+        url('font/STIXTwoText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-Regular.eot');
+    src: url('font/STIXTwoText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-Regular.woff2') format('woff2'),
+        url('font/STIXTwoText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-SemiBold.eot');
+    src: url('font/STIXTwoText-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-SemiBold.woff2') format('woff2'),
+        url('font/STIXTwoText-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'STIX Two Text';
+    src: url('font/STIXTwoText-SemiBoldItalic.eot');
+    src: url('font/STIXTwoText-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('font/STIXTwoText-SemiBoldItalic.woff2') format('woff2'),
+        url('font/STIXTwoText-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

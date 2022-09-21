@@ -19,6 +19,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- fancy_box(팬시박스) JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 부드러운 스크롤 -->
+    <script src="css/Smooth-Mouse-Wheel-Scrolling-Plugin-With-jQuery-easeScroll/jquery.easeScroll.js"></script>
+    <!-- aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         $(function(){
@@ -42,6 +46,8 @@
                 $('.mySwiper').removeClass('on');
                 $('.mySwiper').eq($(this).index()).addClass('on');
             });
+        
+        $("html").easeScroll();
 
         });//jquery end
     </script>
@@ -377,8 +383,8 @@
                         <p><span>제작일자</span>2022.08.10</p>
                     </div>
                     <ul class="btn">
-                        <li><a href="#">기획서 및 작업과정</a></li>
-                        <li><a href="#">사이트 보기</a></li>
+                        <li><a href="sub/web1/html/proposal.html" target="_blank">기획서 및 작업과정</a></li>
+                        <li><a href="sub/web1/html/index.html" target="_blank">사이트 보기</a></li>
                     </ul><!-- .btn end -->
                 </div><!-- .web_info end -->
                 <img src="img/web_img01.png" alt="RE:NK 웹이미지">
@@ -394,8 +400,8 @@
                         <p><span>제작일자</span>2022.08.10</p>
                     </div>
                     <ul class="btn">
-                        <li><a href="#">기획서 및 작업과정</a></li>
-                        <li><a href="#">사이트 보기</a></li>
+                        <li><a href="sub/web2/html/proposal.html" target="_blank">기획서 및 작업과정</a></li>
+                        <li><a href="sub/web2/html/index.html" target="_blank">사이트 보기</a></li>
                     </ul><!-- .btn end -->
                 </div><!-- .web_info end -->
                 <img src="img/web_img02.png" alt="puma 웹이미지">
@@ -423,5 +429,17 @@
             </div><!-- .list end -->
         </div>
     </section><!-- .cont04 end -->
+    <footer>
+        <div class="inner">
+            <h3>Thank you!</h3>
+            <ul class="btn">
+                <li><a href="#">유튜브채널 이동</a></li>
+                <li><a href="#" download>지원서 다운로드</a></li>
+            </ul>
+            <p>COPYRIGHT 2022. 디자이너 강지은. ALL RIGHTS RESERVED.</p>
+            <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br />
+                사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/font/font.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <!-- jquery 연결 -->
@@ -17,6 +18,8 @@
     <script src="css/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -43,7 +46,7 @@
     </header>
     <section class="main_visual">
         <video autoplay muted loop>
-            <source src="img/PUMA_video.mp4" type="video/mp4" />
+            <source src="img/PUMA_video_.mp4" type="video/mp4" />
         </video>
     </section><!-- .main_visual end -->
 
@@ -129,7 +132,7 @@
 
     <section class="cont02">
         <div class="cont02_wrap">
-            <div class="cont02_title">
+            <div class="cont02_title" data-aos="fade-down" data-aos-duration="1100">
                 <h4>I ALWAYS THINK THAT<br>
                     I AM FOREVER FASTER</h4>
                 <p>스포츠는 우리를 변화시키고 힘을 실어주는 힘이 있습니다.
@@ -141,18 +144,18 @@
             <div class="cont02_list">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="#" data-aos="fade-up-right" data-aos-duration="1200">
                             <div class="img_box">
-                                <img src="img/cont02_img01.jpg" alt="MB.01 LO FTW COLLECTION">
+                                <p><img src="img/cont02_img01.jpg" alt="MB.01 LO FTW COLLECTION"></p>
                             </div>
                             <div>
                                 <strong>MB.01 LO FTW COLLECTION</strong>
                                 <p>LaMelo Ball</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" data-aos="fade-up-right" data-aos-duration="1200">
                             <div class="img_box">
-                                <img src="img/cont02_img03.jpg" alt="MB.01 LO FTW COLLECTION">
+                                <p><img src="img/cont02_img03.jpg" alt="MB.01 LO FTW COLLECTION"></p>
                             </div>
                             <div>
                                 <strong>PUMA X DUA LIPA</strong>
@@ -161,18 +164,18 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" data-aos="fade-up-left" data-aos-duration="1200">
                             <div class="img_box">
-                                <img src="img/cont02_img02.jpg" alt="MB.01 LO FTW COLLECTION">
+                                <p><img src="img/cont02_img02.jpg" alt="MB.01 LO FTW COLLECTION"></p>
                             </div>
                             <div>
                                 <strong>PUMA X COCACOLA</strong>
                                 <p>코카콜라 컬렉션</p>
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="#" data-aos="fade-up-left" data-aos-duration="1200">
                             <div class="img_box">
-                                <img src="img/cont02_img04.jpg" alt="MB.01 LO FTW COLLECTION">
+                                <p><img src="img/cont02_img04.jpg" alt="MB.01 LO FTW COLLECTION"></p>
                             </div>
                             <div>
                                 <strong>PUMA X TRACKSMITH</strong>
@@ -185,22 +188,19 @@
         </div><!-- .cont02_wrap end -->
     </section><!-- .cont02 end -->
 
-    <section class="cont03">
+    <section class="cont03" data-aos="fade-down" data-aos-duration="1100">
         <h4>PUMA STYLE GUIDE</h4>
         <div class="guide_box">
             <div>
-                <a href="#">
-                    <img src="img/guide_img01.jpg" alt="SPORTS사진">
+                <a href="#" class="sports">
                     <p>SPORTS</p>
                 </a>
             </div>
             <div>
-                <a href="#">
-                    <img src="img/guide_img02.jpg" alt="MEN사진">
+                <a href="#" class="men">
                     <p>MEN</p>
                 </a>
-                <a href="#">
-                    <img src="img/guide_img03.jpg" alt="WOMEN사진">
+                <a href="#" class="women">
                     <p>WOMEN</p>
                 </a>
             </div>
@@ -208,7 +208,7 @@
     </section><!-- .cont03 end -->
     <section class="cont04">
         <h4>INSTAGRAM@PUMA</h4>
-        <div class="insta">
+        <div class="insta" data-aos="fade-down" data-aos-duration="1400">
             <div class="insta_box">
                 <img src="img/insta_innerbox.png" alt="인스타이미지">
             </div><!-- .insta box end -->
@@ -281,5 +281,10 @@
             </div><!-- .sns end -->
         </div><!-- .footer_wrap end -->
     </footer>
+
+    <!-- aos 관련 스크립트 -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

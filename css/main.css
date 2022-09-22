@@ -423,6 +423,56 @@ header .nav p {
     display: flex;
     justify-content: space-between;
 }
+.cont04 .list a {
+    cursor: url('../img/click.png'), auto;
+}
 .cont04 .list .ma {
     margin-top: 50px;
+}
+
+/* footer */
+footer .inner {
+    text-align: center;
+    padding-top: 170px;
+    margin-bottom: 100px;
+}
+footer h3 {
+    font-family: 'Permanent Marker';
+    font-size: 100px;
+    position: relative;
+    margin-bottom: 100px;
+}
+footer h3::after {
+    content: 'Thank you!';
+    font-family: 'Permanent Marker';
+    font-size: 100px;
+    position: absolute;
+    color: #4f74ff;
+    top: calc(50% + 6px);
+    left: calc(50% + 6px);
+    transform: translate(-50%, -50%);
+    z-index: -99;
+}
+footer .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 46px;
+}
+footer .btn li {
+    border: 1px solid #fff;
+    margin-right: 28px;
+    height: 60px;
+    padding: 0 44px;
+    line-height: 60px;
+}
+footer .btn li:hover {
+    background-color: #4f74ff;
+    border: 1px solid #4f74ff;
+}
+footer p {
+    font-size: 14px;
+    line-height: 20px;
+}
+footer p:nth-of-type(1) {
+    margin-bottom: 24px;
 }

@@ -163,6 +163,8 @@ header div .h_icon {
 .cont02 {
     background-image: url("../img/cont02_background.jpg");
     height: 2094px;
+    width: 100%;
+    background-attachment:fixed;
 }
 .cont02 .cont02_wrap {
     width: 1440px;
@@ -206,6 +208,13 @@ header div .h_icon {
     position: relative;
     z-index: 9999;
 }
+.cont02 .cont02_list ul li a .img_box img {
+    display: block;
+    transition: all 0.2s linear;
+}
+.cont02 .cont02_list ul li a .img_box p {
+    overflow: hidden;
+}
 .cont02 .cont02_list ul li a .img_box::before {
     content: '';
     position: absolute;
@@ -226,6 +235,9 @@ header div .h_icon {
     border: 1px solid #fff;
     z-index: -999;
 }
+.cont02 .cont02_list ul li a .img_box:hover img {
+    transform: scale(1.1);
+}
 .cont02 .cont02_list ul li strong {
     display: block;
     font-size: 30px;
@@ -242,7 +254,7 @@ header div .h_icon {
 
 .cont03 {
     width: 1440px;
-    margin: 200px auto;
+    margin: 200px auto 0;
 }
 .cont03 h4 {
     font-size: 50px;
@@ -258,8 +270,35 @@ header div .h_icon {
 .cont03 .guide_box img {
     display: block;
 }
-.cont03 .guide_box div a {
+.cont03 .guide_box div .sports {
+    background: url("../img/guide_img01.jpg") center center / cover no-repeat;
     position: relative;
+    width: 732px;
+    height: 708px;
+    display: inline-block;
+}
+.cont03 .guide_box div .sports:hover {
+    background: url("../img/guide_img01_hover.jpg");
+}
+.cont03 .guide_box div .men {
+    background: url("../img/guide_img02.jpg") center center / cover no-repeat;
+    width: 708px;
+    height: 354px;
+    position: relative;
+    display: inline-block;
+}
+.cont03 .guide_box div .men:hover {
+    background: url("../img/guide_img02_hover.jpg");
+}
+.cont03 .guide_box div .women {
+    background: url("../img/guide_img03.jpg") center center / cover no-repeat;
+    width: 708px;
+    height: 354px;
+    position: relative;
+    display: inline-block;
+}
+.cont03 .guide_box div .women:hover {
+    background: url("../img/guide_img03_hover.jpg"); 
 }
 .cont03 .guide_box div a p {
     position: absolute;
@@ -281,7 +320,7 @@ header div .h_icon {
 }
 .cont04 h4 {
     width: 1440px;
-    margin: 200px auto 86px;
+    margin: 270px auto 25px;
     color: #000;
     font-size: 50px;
     font-family: 'S-Core Dream 5';
@@ -293,7 +332,7 @@ header div .h_icon {
 .cont04 .insta .insta_box {
     filter: drop-shadow(0 1px 5px #7e848a);
     position: absolute;
-    top: 429px;
+    top: 85px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
@@ -422,5 +461,5 @@ footer .footer_wrap .sns ul {
 }
 footer .footer_wrap .sns ul li a {
     margin: 0 45px 34px 0;
-    font-size: 18px;
+    font-size: 15px;
 }

@@ -66,7 +66,7 @@ header .nav p {
 }
 .main_visual .main_title h4 {
     font-size: 100px;
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     line-height: 1.4;
     position: relative;
     /* filter: drop-shadow(0 1px 5px #000); */
@@ -123,7 +123,7 @@ header .nav p {
     display: flex;
 }
 .cont01 .pro_title h4 {
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     font-size: 50px;
     margin-bottom: 38px;
 }
@@ -197,7 +197,7 @@ header .nav p {
     text-align: center;
 }
 .title h3 {
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     font-size: 50px;
 }
 .title p {
@@ -320,7 +320,7 @@ header .nav p {
 }
 .cont03 .web01::before {
     content: '01';
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     font-size: 202px;
     color: #273362;
     position: absolute;
@@ -361,8 +361,11 @@ header .nav p {
     border: 1px solid #fff;
     margin-right: 28px;
     height: 60px;
-    padding: 0 44px;
     line-height: 60px;
+}
+.cont03 .web01 .web_info .btn li a {
+    display: block;
+    padding: 0 44px;
 }
 .cont03 .web01 .web_info .btn li:hover {
     background-color: #4f74ff;
@@ -388,7 +391,7 @@ header .nav p {
 }
 .cont03 .web02 .web_info::before {
     content: '02';
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     font-size: 202px;
     color: #273362;
     position: absolute;
@@ -403,8 +406,11 @@ header .nav p {
     border: 1px solid #fff;
     margin-right: 28px;
     height: 60px;
-    padding: 0 44px;
     line-height: 60px;
+}
+.cont03 .web02 .web_info .btn li a {
+    display: block;
+    padding: 0 44px;
 }
 .cont03 .web02 .web_info .btn li:hover {
     background-color: #4f74ff;
@@ -437,14 +443,14 @@ footer .inner {
     margin-bottom: 100px;
 }
 footer h3 {
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     font-size: 100px;
     position: relative;
     margin-bottom: 100px;
 }
 footer h3::after {
     content: 'Thank you!';
-    font-family: 'Permanent Marker';
+    font-family: 'Permanent Marker1';
     font-size: 100px;
     position: absolute;
     color: #4f74ff;
@@ -462,8 +468,12 @@ footer .btn li {
     border: 1px solid #fff;
     margin-right: 28px;
     height: 60px;
-    padding: 0 44px;
     line-height: 60px;
+}
+footer .btn li a {
+    display: block;
+    padding: 0 44px;
+    height: 100%;
 }
 footer .btn li:hover {
     background-color: #4f74ff;

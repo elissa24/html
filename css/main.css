@@ -29,6 +29,12 @@ a {
 header {
     height: 90px;
     border-bottom: 1px solid #fff;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 header .inner {
     display: flex;
@@ -50,16 +56,33 @@ header .nav {
 }
 header .nav p {
     margin-left: 70px;
+    position: relative;
+}
+header .nav p::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+header .nav p:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* main_visual */
 .main_visual {
-    height: calc(100vh - 90px);
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 .main_visual .main_title {
-    margin-top: 235px;
+    margin-top: 316px;
 }
 .main_visual .main_title strong {
     font-size: 30px;
@@ -84,6 +107,10 @@ header .nav p {
 }
 .main_visual .main_title h4:nth-of-type(2)::after {
     width: 505px;
+}
+.main_visual .scroll_wrap {
+    position: absolute;
+    top: 80px;
 }
 .main_visual .scroll {
     font-family: 'Gmarket Sans TTF';
@@ -307,7 +334,8 @@ header .nav p {
 
 /* .cont03 웹디자인 */
 .cont03 {
-    padding-top: 170px;
+    padding: 170px 0 420px;
+    overflow: hidden;
 }
 .cont03 .title {
     text-align: center;
@@ -318,7 +346,7 @@ header .nav p {
 .cont03 .web01 {
     position: relative;
 }
-.cont03 .web01::before {
+.cont03 .web01 .web_info::before {
     content: '01';
     font-family: 'Permanent Marker1';
     font-size: 202px;
@@ -422,7 +450,7 @@ header .nav p {
     margin-bottom: 170px;
 }
 .cont04 .title {
-    margin: 535px 0 140px;
+    margin: 200px 0 140px;
     text-align: center;
 }
 .cont04 .list {
@@ -431,9 +459,48 @@ header .nav p {
 }
 .cont04 .list a {
     cursor: url('../img/click.png'), auto;
+    width: 344px;
+    position: relative;
+}
+.cont04 .list a img {
+    width: 100%;
+    object-fit: cover;
 }
 .cont04 .list .ma {
     margin-top: 50px;
+}
+.cont04 .list a .click {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 340px;
+    height: 539px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    display: none;
+}
+.cont04 .list a .click div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.658);
+}
+.cont04 .list a .click div strong {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Permanent Marker1';
+    display: inline-block;
+}
+.cont04 .list a .click div p {
+    text-align: center;
+    font-size: 20px;
+    color: #4f74ff;
+    font-family: 'Permanent Marker1';
+}
+.cont04 .list a:hover .click {
+    display: block;
 }
 
 /* footer */

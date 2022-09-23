@@ -1,28 +1,6 @@
 @charset "utf-8";
 
-/* 에스코어드림 */
-@font-face {
-    font-family: 'S-Core Dream 1';
-    src: url('../font/S-CoreDream/S-CoreDream-1Thin.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-1Thin.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-1Thin.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-1Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'S-Core Dream 2';
-    src: url('../font/S-CoreDream/S-CoreDream-2ExtraLight.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-2ExtraLight.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-2ExtraLight.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-2ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
+/* 에스코어 드림 */
 @font-face {
     font-family: 'S-Core Dream 3';
     src: url('../font/S-CoreDream/S-CoreDream-3Light.eot');
@@ -33,18 +11,6 @@
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'S-Core Dream 4';
-    src: url('../font/S-CoreDream/S-CoreDream-4Regular.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-4Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-4Regular.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-4Regular.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
 @font-face {
     font-family: 'S-Core Dream 5';
     src: url('../font/S-CoreDream/S-CoreDream-5Medium.eot');
@@ -56,52 +22,26 @@
     font-display: swap;
 }
 
+/* G마켓 산스 */
 @font-face {
-    font-family: 'S-Core Dream 6';
-    src: url('../font/S-CoreDream/S-CoreDream-6Bold.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-6Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-6Bold.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-6Bold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'S-Core Dream 7';
-    src: url('../font/S-CoreDream/S-CoreDream-7ExtraBold.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-7ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-7ExtraBold.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-family: 'Gmarket Sans TTF';
+    src: url('../font/GmarketSans/GmarketSansTTFBold.eot');
+    src: url('../font/GmarketSans/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GmarketSans/GmarketSansTTFBold.woff2') format('woff2'),
+        url('../font/GmarketSans/GmarketSansTTFBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
+/* Permanent Marker */
 @font-face {
-    font-family: 'S-Core Dream 8';
-    src: url('../font/S-CoreDream/S-CoreDream-8Heavy.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-8Heavy.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-8Heavy.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-8Heavy.woff') format('woff');
-    font-weight: 800;
+    font-family: 'Permanent Marker1';
+    src: url('../font/permanent_Marker/permanentPermanentMarker-Regular.eot');
+    src: url('../font/permanent_Marker/PermanentMarker-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/permanent_Marker/PermanentMarker-Regular.woff2') format('woff2'),
+        url('../font/permanent_Marker/PermanentMarker-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'S-Core Dream 9';
-    src: url('../font/S-CoreDream/S-CoreDream-9Black.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-9Black.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-9Black.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-9Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-
-
-
-

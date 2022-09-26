@@ -4,19 +4,19 @@
 @font-face {
     font-family: 'S-Core Dream 3';
     src: url('S-CoreDream/S-CoreDream-3Light.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-3Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-3Light.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-3Light.woff') format('woff');
+    src: url('S-CoreDream/S-CoreDream-3Light.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream/S-CoreDream-3Light.woff2') format('woff2'),
+        url('S-CoreDream/S-CoreDream-3Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'S-Core Dream 5';
-    src: url('../font/S-CoreDream/S-CoreDream-5Medium.eot');
-    src: url('../font/S-CoreDream/S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/S-CoreDream/S-CoreDream-5Medium.woff2') format('woff2'),
-        url('../font/S-CoreDream/S-CoreDream-5Medium.woff') format('woff');
+    src: url('S-CoreDream/S-CoreDream-5Medium.eot');
+    src: url('S-CoreDream/S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream/S-CoreDream-5Medium.woff2') format('woff2'),
+        url('S-CoreDream/S-CoreDream-5Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -25,10 +25,10 @@
 /* G마켓 산스 */
 @font-face {
     font-family: 'Gmarket Sans TTF';
-    src: url('../font/GmarketSans/GmarketSansTTFBold.eot');
-    src: url('../font/GmarketSans/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/GmarketSans/GmarketSansTTFBold.woff2') format('woff2'),
-        url('../font/GmarketSans/GmarketSansTTFBold.woff') format('woff');
+    src: url('GmarketSans/GmarketSansTTFBold.eot');
+    src: url('GmarketSans/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+        url('GmarketSans/GmarketSansTTFBold.woff2') format('woff2'),
+        url('GmarketSans/GmarketSansTTFBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;

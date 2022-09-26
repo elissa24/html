@@ -276,6 +276,7 @@ header div .h_icon {
     width: 732px;
     height: 708px;
     display: inline-block;
+    transition: all 0.2s linear;
 }
 .cont03 .guide_box div .sports:hover {
     background: url("../img/guide_img01_hover.jpg");
@@ -285,7 +286,8 @@ header div .h_icon {
     width: 708px;
     height: 354px;
     position: relative;
-    display: inline-block;
+    display: block;
+    transition: all 0.2s linear;
 }
 .cont03 .guide_box div .men:hover {
     background: url("../img/guide_img02_hover.jpg");
@@ -296,6 +298,7 @@ header div .h_icon {
     height: 354px;
     position: relative;
     display: inline-block;
+    transition: all 0.2s linear;
 }
 .cont03 .guide_box div .women:hover {
     background: url("../img/guide_img03_hover.jpg"); 

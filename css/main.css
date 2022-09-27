@@ -625,7 +625,7 @@ footer p:nth-of-type(1) {
         background-color: rgba(0, 0, 0, 0.8);
     } 
     header h1 {
-        width: 30px;
+        width: 8%;
         line-height: 60px;
     }
     header .nav {

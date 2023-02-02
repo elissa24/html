@@ -10,11 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <!-- foncy_box(팬시박스) CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font/font.css">
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 작성 JS -->
+    <script src="css/main.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- fancy_box(팬시박스) JS -->
@@ -23,86 +27,87 @@
     <script src="css/Smooth-Mouse-Wheel-Scrolling-Plugin-With-jQuery-easeScroll/jquery.easeScroll.js"></script>
     <!-- aos JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        $(function(){
-            //영상편집 슬라이드
-            var swiper = new Swiper(".mySwiper", {
-                pagination: {
-                el: ".swiper-pagination",
-                type: "fraction",
-                },
-                navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                },
-            });
-            
-            //영상편집 탭메뉴
-            $('.motion_menu ul li').click(function(){
-                $('.motion_menu ul li').removeClass('on');//클래스명지워주고나서
-                $(this).addClass('on');//클래스명붙여주는 구도로 작성해야함
-
-                $('.mySwiper').removeClass('on');
-                $('.mySwiper').eq($(this).index()).addClass('on');
-            });
-        
-        $("html").easeScroll();
-
-        });//jquery end
-    </script>
+    <!-- jquery ui lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <header>
+    <div class="top_wrap">
+        <div class="gotop">
+            <a class="top_btn">Top</a>
+        </div>
+    </div>
+    <header id="header">
         <div class="inner">
             <h1><a href="#"><img src="img/logo.png" alt="JE 로고이미지"></a></h1>
             <div class="nav">
-                <p><a href="#">PROFILE</a></p>
-                <p><a href="#">VIDEO EDITING</a></p>
-                <p><a href="#">WEB DESIGN</a></p>
-                <p><a href="#">OTHER WORKS</a></p>
+                <p>
+                    <a href="#">
+                        <span class="pc">PROFILE</span>
+                        <span class="mobile">Pro</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <span class="pc">VIDEO EDITING</span>
+                        <span class="mobile">Video</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <span class="pc">WEB DESIGN</span>
+                        <span class="mobile">Web</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="#">
+                        <span class="pc">OTHER WORKS</span>
+                        <span class="mobile">Other</span>
+                    </a>
+                </p>
             </div><!-- .nav end -->
         </div><!-- .inner end -->
     </header>
-    <section class="main_visual">
+    <div class="main_visual">
         <div class="inner">
-            <div class="main_title">
+            <div class="main_title" data-aos="fade-down" data-aos-duration="1600">
                 <strong>Motion graphic & Web designer</strong>
                 <h4>Kang Ji Eun</h4>
                 <h4>PortFolio</h4>
             </div><!-- .main_title end -->
-            <div class="scroll">
-                <div>
-                    WEBDESIGN<span> HTML</span>
-                    CSS<span> FIGMA</span>
-                    WEBDESIGN<span> HTML</span>
-                    CSS<span> FIGMA</span>
-                </div>
-                <div>
-                    WEBDESIGN<span> HTML</span>
-                    CSS<span> FIGMA</span>
-                    WEBDESIGN<span> HTML</span>
-                    CSS<span> FIGMA</span>
-                </div>
-            </div><!-- scroll end 1 -->
-            <div class="scroll">
-                <div>
-                    PHOTO SHOP<span> ILLUSTRATOR</span>
-                    AFTER EFFECTS<span> PREMIERE PRO</span>
-                    ILLUSTRATOR</span>
-                    AFTER EFFECTS<span> PREMIERE PRO</span>
-                </div>
-                <div>
-                    PHOTO SHOP<span> ILLUSTRATOR</span>
-                    AFTER EFFECTS<span> PREMIERE PRO</span>
-                    ILLUSTRATOR</span>
-                    AFTER EFFECTS<span> PREMIERE PRO</span>
-                </div>
-            </div><!-- scroll end 2 -->
+            <div class="scroll_wrap">
+                <div class="scroll">
+                    <div>
+                        WEBDESIGN<span> HTML</span>
+                        CSS<span> FIGMA</span>
+                        WEBDESIGN<span> HTML</span>
+                        CSS<span> FIGMA</span>
+                    </div>
+                    <div>
+                        WEBDESIGN<span> HTML</span>
+                        CSS<span> FIGMA</span>
+                        WEBDESIGN<span> HTML</span>
+                        CSS<span> FIGMA</span>
+                    </div>
+                </div><!-- scroll end 1 -->
+                <div class="scroll">
+                    <div>
+                        PHOTO SHOP<span> ILLUSTRATOR</span>
+                        AFTER EFFECTS<span> PREMIERE PRO</span>
+                        ILLUSTRATOR</span>
+                        AFTER EFFECTS<span> PREMIERE PRO</span>
+                    </div>
+                    <div>
+                        PHOTO SHOP<span> ILLUSTRATOR</span>
+                        AFTER EFFECTS<span> PREMIERE PRO</span>
+                        ILLUSTRATOR</span>
+                        AFTER EFFECTS<span> PREMIERE PRO</span>
+                    </div>
+                </div><!-- scroll end 2 -->
+            </div>
         </div><!-- .inner end -->
-    </section><!-- .main_visual end -->
+    </div><!-- .main_visual end -->
 
-    <section class="cont01">
+    <section class="cont01" data-aos="fade-down" data-aos-duration="1600" id="menu1">
         <div class="inner">
             <div class="pro_title">
                 <h4>Profile</h4>
@@ -141,12 +146,30 @@
                     <div>
                         <strong>Experience</strong>
                         <div class="ex_data">
-                            <p><span>2018.09.04 ~ 2018.11.07</span>편집향상과정(포토샵 입문과 활용/일러스트레이터 입문과 활용)</p>
-                            <p><span>2019.02.20 ~ 2019.08.13</span>과정평가형 웹디자인 기능사 과정 수료</p>
-                            <p><span>2020.07.10</span>부산디자인진흥원 SNS에 최적화된 카드뉴스 제작노하우</p>
-                            <p><span>2019.11.25 ~ 2021.09.12</span>오더온 주식회사 Designer</p>
-                            <p><span>2022.07.20 ~ 2023.01.03</span>[멀티미디어콘텐츠제작]스마트-영상편집&웹(프리미어,에펙,시네마4D)</p>
-                            <p><span>2022.06.06 ~ ing</span>ThinkServ. Designer</p>
+                            <p>
+                                <span>2018.09.04 ~ 2018.11.07</span>
+                                <span>편집향상과정(포토샵 입문과 활용/일러스트레이터 입문과 활용)</span>
+                            </p>
+                            <p>
+                                <span>2019.02.20 ~ 2019.08.13</span>
+                                <span>과정평가형 웹디자인 기능사 과정 수료</span>
+                            </p>
+                            <p>
+                                <span>2020.07.10</span>
+                                <span>부산디자인진흥원 SNS에 최적화된 카드뉴스 제작노하우</span>
+                            </p>
+                            <p>
+                                <span>2019.11.25 ~ 2021.09.12</span>
+                                <span>오더온 주식회사 Designer</span>
+                            </p>
+                            <p>
+                                <span>2022.07.20 ~ 2023.01.03</span>
+                                <span>[멀티미디어콘텐츠제작]스마트-영상편집&웹(프리미어,에펙,시네마4D)</span>
+                            </p>
+                            <p>
+                                <span>2022.06.06 ~ ing</span>
+                                <span>ThinkServ. Designer</span>
+                            </p>
                         </div>
                     </div>
                 </div><!-- .info end 2 -->
@@ -162,13 +185,13 @@
         </div>
     </section><!-- .cont01 end -->
 
-    <section class="cont02">
+    <section class="cont02" data-aos="fade-down" data-aos-duration="1600" id="menu2">
         <div class="inner">
             <div class="title">
                 <h3>video editing</h3>
                 <p>프리미어프로, 에프터이펙트 등을 사용하여 모션그래픽을 제작하였습니다.</p>
             </div><!-- .title end -->
-            <div class="motion_menu">
+            <!--<div class="motion_menu">
                 <ul>
                     <li class="on">게임</li>
                     <li>홍보영상</li>
@@ -176,7 +199,7 @@
                     <li>브이로그</li>
                     <li>뮤비티저</li>
                 </ul>
-            </div><!-- .motion_menu end -->
+            </div> .motion_menu end -->
 
             <!-- swiper slide -->
             <!-- motion_menu 01 게임 -->
@@ -189,17 +212,17 @@
                                 <img src="img/pc_img.png" alt="pc 모니터" />
                                 <div class="youtube">
                                     <div>
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_--SVJhQzx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UVwW603Bp6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                     </div>
                                 </div><!-- .youtube end -->
                             </div><!-- .PC_youtube end -->
                             <div class="info">
-                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
-                                <h4>영상제목작성하는곳</h4>
-                                <p>컨셉 및 제작목적이는 꽃 무엇을 청춘은 우리는 바이며, 교향악이다. 쓸쓸한 착목한는 청춘의 심장의 아니한 교향악이다. 능히 귀는 천지는 인간의 가장 고동을 길을 같이, 운다. 이상, 동산에는 대중을 열락의 봄바람이다. 예가 그들의 무한한 예수는 위하여서. 천고에 찾아 풍부하게 끓는 얼마나 있으며, 있는가? 이상의 우리의 방지하는 것이다.</p>
+                                <strong>편집, 디자인</strong>
+                                <h4>닥터나우 인포그래픽</h4>
+                                <p>닥터나우는 국내 최초로 비대면 진료와 처방약 배달 서비스를 모두 제공하는 원격의료 플랫폼으로 제공하는 어플을 홍보대상으로 제작해보았습니다.</p>
                                 <ul class="text">
-                                    <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 마야, 포토샵, 일러스트레이터</li>
-                                    <li><strong>제작일자</strong> : 2022.09</li>
+                                    <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                    <li><strong>제작일자</strong> : 2022.12.27</li>
                                 </ul><!-- .text end -->
                                 <ul class="btn">
                                     <li><a href="#">영상원본보기</a></li>
@@ -220,12 +243,12 @@
                                 </div><!-- .youtube end -->
                             </div><!-- .PC_youtube end -->
                             <div class="info">
-                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
-                                <h4>영상제목작성하는곳</h4>
-                                <p>컨셉 및 제작목적이는 꽃 무엇을 청춘은 우리는 바이며, 교향악이다. 쓸쓸한 착목한는 청춘의 심장의 아니한 교향악이다. 능히 귀는 천지는 인간의 가장 고동을 길을 같이, 운다. 이상, 동산에는 대중을 열락의 봄바람이다. 예가 그들의 무한한 예수는 위하여서. 천고에 찾아 풍부하게 끓는 얼마나 있으며, 있는가? 이상의 우리의 방지하는 것이다.</p>
+                                <strong>편집, 디자인</strong>
+                                <h4>닥터나우 인포그래픽</h4>
+                                <p>닥터나우는 국내 최초로 비대면 진료와 처방약 배달 서비스를 모두 제공하는 원격의료 플랫폼으로 제공되는 어플을 홍보대상으로 제작해보았습니다.</p>
                                 <ul class="text">
-                                    <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 마야, 포토샵, 일러스트레이터</li>
-                                    <li><strong>제작일자</strong> : 2022.09</li>
+                                    <li><strong>프로그램</strong> : 프리미어프로, 에프터이펙트, 포토샵, 일러스트레이터</li>
+                                    <li><strong>제작일자</strong> : 2022.12.</li>
                                 </ul><!-- .text end -->
                                 <ul class="btn">
                                     <li><a href="#">영상원본보기</a></li>
@@ -236,9 +259,9 @@
                     </div><!-- 2 -->
 
                 </div>
-                <div class="swiper-button-next"></div>
+                <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div> -->
             </div><!-- .swiper01 end -->
             <!-- motion_menu 02 홍보영상 -->
             <div class="swiper mySwiper">
@@ -366,14 +389,14 @@
         </div><!-- .inner_end -->
     </section><!-- .cont02 end -->
 
-    <section class="cont03">
+    <section class="cont03" id="menu3">
         <div class="inner">
-            <div class="title">
+            <div class="title" data-aos="fade-down" data-aos-duration="1600">
                 <h3>Web Design</h3>
                 <p>접근성, 호환성을 고려한 웹사이트 리뉴얼</p>
             </div><!-- .title end --> 
             <div class="web01">
-                <div class="web_info">
+                <div class="web_info" data-aos="fade-down" data-aos-duration="1600">
                     <h3>RE:NK 웹사이트 리뉴얼</h3>
                     <p>스킨케어브랜드인 RE:NK 웹사이트 기획, 디자인에 모두 참여하였으며<br />
                         HTML, CSS, JS언어를 활용하여 웹사이트를 구현하였습니다.</p>
@@ -387,59 +410,90 @@
                         <li><a href="sub/web1/html/index.html" target="_blank">사이트 보기</a></li>
                     </ul><!-- .btn end -->
                 </div><!-- .web_info end -->
-                <img src="img/web_img01.png" alt="RE:NK 웹이미지">
+                <img src="img/web_img01.png" alt="RE:NK 웹이미지" data-aos="fade-left" data-aos-duration="1600">
             </div><!-- .web01 end -->
             <div class="web02">
-                <div class="web_info">
+                <div class="web_info" data-aos="fade-down" data-aos-duration="1600">
                     <h3>PUMA 웹사이트 리뉴얼</h3>
                     <p>스포츠 브랜드인 PUMA 웹사이트 기획, 디자인에 모두 참여하였으며<br />
                         HTML, CSS, JS언어를 활용하여 웹사이트를 구현하였습니다.</p>
                     <div class="web_data">
                         <p><span>프로그램</span>포토샵, 일러스트, VScode</p>
                         <p><span>사용언어</span>html, css, js</p>
-                        <p><span>제작일자</span>2022.08.10</p>
+                        <p><span>제작일자</span>2022.08.19</p>
                     </div>
                     <ul class="btn">
                         <li><a href="sub/web2/html/proposal.html" target="_blank">기획서 및 작업과정</a></li>
                         <li><a href="sub/web2/html/index.html" target="_blank">사이트 보기</a></li>
                     </ul><!-- .btn end -->
                 </div><!-- .web_info end -->
-                <img src="img/web_img02.png" alt="puma 웹이미지">
+                <img src="img/web_img02.png" alt="puma 웹이미지" data-aos="fade-right" data-aos-duration="1600">
             </div><!-- .web01 end -->
         </div>
     </section><!-- .cont03 end -->
-    <section class="cont04">
+    <section class="cont04" id="menu4">
         <div class="inner">
-            <div class="title">
+            <div class="title" data-aos="fade-down" data-aos-duration="1600">
                 <h3>other works</h3>
             </div>
-            <div class="list">
+            <div class="list" data-aos="fade-down" data-aos-duration="1600">
                 <a href="img/other01_F.png" data-fancybox="images">
                     <img src="img/other01.png" alt="HAPPY NEW YEAR">
+                    <div class="click">
+                        <div>
+                            <strong>Click!</strong>
+                            <p>view more</p>
+                        </div>
+                    </div>
                 </a>
                 <a href="img/other02_F.png" data-fancybox="images" class="ma">
                     <img src="img/other02.png" alt="크리스마스 특별할인 이벤트">
+                    <div class="click">
+                        <div>
+                            <strong>Click!</strong>
+                            <p>view more</p>
+                        </div>
+                    </div>
                 </a>
-                <a href="img/other03_F.jpg" data-fancybox="images">
+                <a href="img/other03_F.gif" data-fancybox="images">
                     <img src="img/other03.png" alt="새해맞이 특별이벤트">
+                    <div class="click">
+                        <div>
+                            <strong>Click!</strong>
+                            <p>view more</p>
+                        </div>
+                    </div>
                 </a>
                 <a href="img/other04_F.jpg" data-fancybox="images" class="ma">
                     <img src="img/other04.png" alt="해외여행지 이벤트">
+                    <div class="click">
+                        <div>
+                            <strong>Click!</strong>
+                            <p>view more</p>
+                        </div>
+                    </div>
                 </a>
             </div><!-- .list end -->
         </div>
     </section><!-- .cont04 end -->
-    <footer>
+    <footer data-aos="fade-down" data-aos-duration="1600">
         <div class="inner">
-            <h3>Thank you!</h3>
-            <ul class="btn">
+            <div class="textcontainer">
+                <h3 class="particletext hearts">Thank you!</h3>
+            </div>
+            <!--<ul class="btn">
                 <li><a href="#">유튜브채널 이동</a></li>
                 <li><a href="#" download>지원서 다운로드</a></li>
-            </ul>
+            </ul>-->
             <p>COPYRIGHT 2022. 디자이너 강지은. ALL RIGHTS RESERVED.</p>
             <p>본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br />
                 사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</p>
         </div>
     </footer>
+
+    <!-- aos 관련 스크립트 -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

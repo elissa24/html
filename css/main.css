@@ -265,11 +265,11 @@ header .nav p:hover:after {
 }
 .title h3 {
     font-family: 'PermanentMarker1';
-    font-size: 50px;
+    font-size: 80px;
 }
 .title p {
     font-size: 26px;
-    margin: 38px;
+    margin: 38px 38px 100px 38px;
 }
 .cont02 .motion_menu {
     display: inline-block;

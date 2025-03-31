@@ -431,7 +431,7 @@ header .nav p:hover:after {
 }
 .cont03 .web01 .web_info .btn li {
     border: 1px solid #fff;
-    margin-right: 28px;
+    margin-right: 20px;
     height: 60px;
     line-height: 60px;
 }
@@ -442,6 +442,9 @@ header .nav p:hover:after {
 .cont03 .web01 .web_info .btn li:hover {
     background-color: #4f74ff;
     border: 1px solid #4f74ff;
+}
+.cont03 .web01 .web_info .btn_under {
+    margin-top: 20px;
 }
 .cont03 .web01 img {
     position: absolute;
